@@ -1,3 +1,4 @@
+/* ===== JAVA SCRIPT ===== */
 /* ===== HAMBURGER MENU ===== */
 
 const toggle = document.querySelector('.menu-toggle');
@@ -22,7 +23,7 @@ document.querySelectorAll("section").forEach(sec=>{
     observer.observe(sec);
 });
 
-/* ===== MOBILE ACTIVE TAB ON SCROLL ===== */
+/* ===== MOBILE ACTIVE TAB ON SCROLL (SCROLL SPY) ===== */
 
 if (window.innerWidth <= 768) {
 
