@@ -1,14 +1,19 @@
 /* ===== JAVA SCRIPT ===== */
-/* ===== HAMBURGER MENU ===== */
+document.addEventListener("DOMContentLoaded", function(){
 
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav-links');
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-links");
 
-toggle.addEventListener('click', ()=>{
-    nav.classList.toggle('active');
-    toggle.classList.toggle('active');
+if(toggle && nav){
+
+toggle.addEventListener("click", function(){
+    nav.classList.toggle("active");
+    toggle.classList.toggle("active");
 });
 
+}
+
+});
 /* ===== SCROLL ANIMATION ===== */
 
 const observer = new IntersectionObserver(entries=>{
@@ -60,3 +65,4 @@ window.addEventListener("scroll", setActiveLink);
 setActiveLink();
 
 }
+
